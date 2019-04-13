@@ -6,12 +6,10 @@ public class MontyHall {
 		return new Random();
 	}
 	
-	
 	public static boolean [] createDoorArray() {
 		boolean [] doorArray = new boolean[3];
 		int full_door_index = createRand().nextInt(3);
 		iterateThroughDoorsAndSet(doorArray, full_door_index);
-		
 		return doorArray;
 	}
 	
@@ -61,7 +59,6 @@ public class MontyHall {
 		}
 	}
 
-
 	private static void setDoorToEmptyOrFull(boolean[] doorArray, int full_door_index, int i) {
 		if(i == full_door_index) {
 			doorArray[i] = true;
@@ -85,5 +82,4 @@ public class MontyHall {
 		}
 		return doorIndex;
 	}
-	
 }

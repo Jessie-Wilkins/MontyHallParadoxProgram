@@ -14,17 +14,13 @@ class TestMontyHall {
 		for(int i = 0; i<1000; i++) {
 			average = (average+MontyHall.chooseDoor())/2;
 		}
-		
 		assertTrue(average<=3);
 	}
 	
 	@Test
 	void isEmptyDoor() {
-		
 		oneEmptyDoor();
-		
 		assertEquals(1, MontyHall.chooseEmptyDoor(doorArray,0));
-		
 	}
 	
 	@Test
@@ -37,18 +33,14 @@ class TestMontyHall {
 		assertNotEquals(chosenDoor, newChosenDoor);
 	}
 	
-	
-
 	@Test
 	void isOpenDoor() {
 		allClosedDoors(openArray);
 		int doorIndex = 0;
 		openArray = MontyHall.openDoor(openArray, doorIndex);
-		
 		assertTrue(openArray[doorIndex]);
 	}
 	
-
 	private void allClosedDoors(boolean[] openArray) {
 		openArray[0] = false;
 		openArray[1] = false;
@@ -61,9 +53,4 @@ class TestMontyHall {
 		doorArray[2] = true;
 		
 	}
-	
-	
-	
-	
-
 }
