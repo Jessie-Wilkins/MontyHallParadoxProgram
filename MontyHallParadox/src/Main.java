@@ -26,7 +26,7 @@ public class Main {
 				stayScore++;
 			}
 		}
-		System.out.println("Switch score: "+ switchScore);
-		System.out.println("Stay score: "+ stayScore);
+		System.out.println("Switch score: "+ switchScore+"/"+num_of_rounds);
+		System.out.println("Stay score: "+ stayScore+"/"+num_of_rounds);
 	}
 }
