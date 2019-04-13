@@ -7,10 +7,10 @@ public class Main {
 		
 		int stayScore = 0;
 		
-		int num_of_rounds = 1000;
+		int num_of_rounds = 100000;
 		
 		for(int i = 0; i<num_of_rounds; i++) {
-			boolean [] doorArray = MontyHall.randomArray();
+			boolean [] doorArray = MontyHall.createDoorArray();
 			boolean [] openArray = MontyHall.createOpenArray();
 			
 			int chosenDoor = MontyHall.chooseDoor();
@@ -27,7 +27,7 @@ public class Main {
 		}
 		
 		for(int i = 0; i<num_of_rounds; i++) {
-			boolean [] doorArray = MontyHall.randomArray();
+			boolean [] doorArray = MontyHall.createDoorArray();
 			boolean [] openArray = MontyHall.createOpenArray();
 			
 			int chosenDoor = MontyHall.chooseDoor();
