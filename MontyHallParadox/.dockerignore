@@ -1,0 +1,6 @@
+./src/Test*
+./bin/Test*
+./Dockerfile
+./.project
+./.settings
+./.gitignore
