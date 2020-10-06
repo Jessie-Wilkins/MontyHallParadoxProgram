@@ -1,4 +1,3 @@
-./src/Test*
 ./bin/Test*
 ./Dockerfile
 ./.project
